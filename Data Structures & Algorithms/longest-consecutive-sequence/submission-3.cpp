@@ -12,13 +12,10 @@ public:
             if(nums[i] == nums[i-1]) continue;
             if(nums[i] == nums[i-1] + 1) {
                 s++;
-            } else {
-                s = 1;
-            }
-
+            } 
+            else s = 1;
             ans = max(ans, s);
         }
-
         return ans;
     }
 };
